@@ -1,11 +1,11 @@
 
-# AiactivUniversalSDK
+# RTAMUniversalSDK
 
 Ads and Analytics Framework
 
 ## [](https://docs.aiactiv.io/sdk/android#installation)Installation
 
-RTamUniversalSDK is available through  [MVN](https://mvnrepository.com/search?q=rtam). To install it, add mavenCentral to your repositories if it's not added yet.
+RTAMUniversalSDK is available through  [MVN](https://mvnrepository.com/search?q=rtam). To install it, add mavenCentral to your repositories if it's not added yet.
 
 repositories {
 
@@ -13,7 +13,7 @@ repositories {
 
 }
 
-Import RTamUniversalSDK dependency
+Import RTAMUniversalSDK dependency
 
 dependencies {
 
@@ -34,7 +34,7 @@ By default, we use same WRITE_KEY for both frameworks. If you would like use WRI
 
 #### [](https://docs.aiactiv.io/sdk/android#track-events)Track Events
 
-RTam.with(context).apply  {
+RTAM.with(context).apply  {
 
   track("Application launched")
 
@@ -42,11 +42,11 @@ RTam.with(context).apply  {
 
 // or
 
-RTam.track(applicationContext,  "Application launched")
+RTAM.track(applicationContext,  "Application launched")
 
 #### [](https://docs.aiactiv.io/sdk/android#identify-events)Identify Events
 
-Rtam.with(context).apply  {
+RTAM.with(context).apply  {
 
   // Traits about user like email, phone number, birthday...
 
@@ -62,11 +62,11 @@ Rtam.with(context).apply  {
 
 val traits =  Traits()
 
-Aiactiv.identify(applicationContext,  "user id", traist)
+RTAM.identify(applicationContext,  "user id", traist)
 
 #### [](https://docs.aiactiv.io/sdk/android#screen-events)Screen Events
 
-Rtam.with(context).apply  {
+RTAM.with(context).apply  {
 
   // Properties about screen like content id, title...
 
@@ -78,7 +78,7 @@ Rtam.with(context).apply  {
 
 // Properties about screen like content id, title...
 
-Aiactiv.identify(applicationContext,  "user id", properties)
+RTAM.identify(applicationContext,  "user id", properties)
 
 ## [](https://docs.aiactiv.io/sdk/android#author)Author
 
@@ -86,4 +86,4 @@ RTAM TECH,  [tech@rtam.io](mailto:tech@aiactiv.io)
 
 ## [](https://docs.aiactiv.io/sdk/android#license)License
 
-RTamUniversalSDK is available under the MIT license. See the LICENSE file for more info.
+RTAMUniversalSDK is available under the MIT license. See the LICENSE file for more info.
